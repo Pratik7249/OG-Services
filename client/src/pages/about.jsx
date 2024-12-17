@@ -14,7 +14,7 @@ export const About = () => {
               <p>
                 Welcome,{" "}
                 {user && user.userData
-                  ? `${user.userData.username.charAt(0).toUpperCase()}${user.userData.username.slice(1)} to our website`
+                  ? `${user.userData.username} to our website`
                   : "to our website"}
               </p>
               <h1>Why Choose Us?</h1>
