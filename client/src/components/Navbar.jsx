@@ -9,7 +9,7 @@ const Navbar = () => {
       <header>
         <div className="container">
           <div className="logo-brand">
-              <a href="/">Thapa</a>
+              <a href="/">OG-SERVICES</a>
           </div>
           <nav>
             <ul>

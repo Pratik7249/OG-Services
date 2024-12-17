@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { Analytics } from "../components/Analytics";
 import { useAuth } from "../store/auth";  // Assuming useAuth is a custom hook that provides user data
+import { Analytics2 } from "../components/layouts/Analytics2";
+
+// Define the scrollToTop function
+const scrollToTop = () => {
+  window.scrollTo(0, 0); // Scrolls to the top of the page
+};
 
 export const About = () => {
   const { user } = useAuth();  // Access user directly from the useAuth hook
@@ -19,38 +24,29 @@ export const About = () => {
               </p>
               <h1>Why Choose Us?</h1>
               <p>
-                Expertise: Our team consists of experienced IT professionals who
-                are passionate about staying up-to-date with the latest industry
-                trends.
+                Expertise: Our team of skilled instructors stays ahead of industry trends to offer cutting-edge computer science courses.
               </p>
               <p>
-                Customization: We understand that every business is unique.
-                That's why we create solutions that are tailored to your specific
-                needs and goals.
+                Customization: Every learner is unique, and we tailor our courses to meet your specific goals and needs.
               </p>
               <p>
-                Customer-Centric Approach: We prioritize your satisfaction and
-                provide top-notch support to address your IT concerns.
+                Customer-Centric Approach: We prioritize your success, offering top-notch support throughout your learning journey.
               </p>
               <p>
-                Affordability: We offer competitive pricing without compromising
-                on the quality of our services.
+                Affordability: Learn at competitive prices without compromising on quality.
               </p>
               <p>
-                Reliability: Count on us to be there when you need us. We're
-                committed to ensuring your IT environment is reliable and
-                available 24/7.
+                Reliability: Count on us for consistent, accessible learning whenever you need it.
               </p>
               <div className="btn btn-group">
-                <NavLink to="/contact">
-                  <button className="btn">Connect Now</button>
+                <NavLink to="/services" onClick={scrollToTop}>
+                  <button className="btn">Check Now</button>
                 </NavLink>
-                <button className="btn secondary-btn">Learn more</button>
               </div>
             </div>
             <div className="hero-image">
               <img
-                src="/images/images/about.png"
+                src="/images/images/about.jpeg"
                 alt="coding buddies"
                 width="400"
                 height="500"
@@ -60,9 +56,7 @@ export const About = () => {
         </section>
       </main>
 
-      <Analytics />
+      <Analytics2 />
     </>
   );
 };
-
-

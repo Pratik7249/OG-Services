@@ -27,8 +27,6 @@ body {
   min-height: 100vh;
 }
 
- /*?  Help me reach 1 Million subs 👉 https://youtube.com/thapatechnical */
-
 h1 {
   font-size: 5.4rem;
   line-height: 1.1;
@@ -132,9 +130,16 @@ button {
     display: flex;
     justify-content: center;
     & img {
-      width: 70%;
-      height: auto;
-    }
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.05); 
+  }
   }
 }
 
@@ -187,9 +192,16 @@ button {
     justify-content: start;
     align-items: center;
     & img {
-      width: 470px;
-      height: 470px;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease-in-out;
     }
+    img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
   }
 
   & .section-form {

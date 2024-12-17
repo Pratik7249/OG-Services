@@ -7,3 +7,9 @@
    ex. if mail exist return mail already exist so cant register again
    then hashing of password using bcrypt done
    json web token done using instance method
+
+
+
+
+
+   To get images : https://storyset.com/search?q=course

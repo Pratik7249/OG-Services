@@ -69,7 +69,7 @@ export const Contact = () => {
         <div className="container grid grid-two-cols">
           <div className="contact-img">
             <img
-              src="/images/images/support.png"
+              src="/images/images/support.jpg"
               alt="we are always ready to help"
             />
           </div>
