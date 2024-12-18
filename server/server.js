@@ -9,6 +9,7 @@ const adminRoute = require("./router/admin-router");
 const connectDB = require("./utils/db");
 const errorMiddleware = require("./middleware/error-middleware");
 
+
 // let handle cors issue i.e. server and client having different port number 
 const corsOptions = {
   origin:"http://localhost:5173",

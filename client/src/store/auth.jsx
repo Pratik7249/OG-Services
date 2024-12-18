@@ -40,16 +40,16 @@ export const AuthProvider = ({ children }) => {
 
       if (response.ok) {
         const data = await response.json();
-        setUser(data.userData);
-        setIsLoading(false);
+        setUser(data);
       } else {
         toast.error("Failed to fetch user data.");
         LogoutUser();
-        setIsLoading(false);
       }
     } catch (error) {
       console.error("Error fetching details:", error);
       toast.error("Error fetching user details.");
+    } finally {
+      setIsLoading(false);
     }
   };
 

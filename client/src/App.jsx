@@ -14,7 +14,7 @@ import { AdminLayout } from "./components/layouts/Admin-Layout";
 import {AdminContacts} from "./pages/Admin-Contact";
 import {AdminUsers} from "./pages/Admin-Users";
 import { AdminUpdate } from './pages/Admin-Update';
-import ServiceDetail from "./pages/ServiceDetail";
+// import {ServiceDetail} from "./pages/ServiceDetail";
 
 
 
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/:id" element={<ServiceDetail />} />
+          {/* <Route path="/services/:id" element={<ServiceDetail />} /> */}
 
           <Route path="/register" element={<Register/>} />
           <Route path="/login" element={<Login/>} />
