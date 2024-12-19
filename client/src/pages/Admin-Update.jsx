@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+import "../styles/AdminUpdate.css";  // Adjust the path if needed
+
 
 export const AdminUpdate = () => {
   const [formData, setFormData] = useState({
