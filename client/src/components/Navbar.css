@@ -1,11 +1,69 @@
-.container{
+/* Styling the container for layout */
+.container {
   max-width: 140rem;
   padding: 4.2rem 2.4rem;
   display: flex;
   justify-content: space-between;
 }
 
-ul{
+/* Styling the navigation list */
+ul {
   display: flex;
   gap: 3.2rem;
+}
+
+/* Update button styles for light/dark toggle */
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #646cff; /* Default color for light mode */
+  padding: 0.8rem; /* Padding for the icon button */
+  padding: 0.1rem 0.1rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scale and color */
+}
+
+.dark-mode-toggle:focus {
+  outline: none;
+}
+
+/* Body styles for light and dark modes */
+body {
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff !important; /* Text color for dark mode */
+}
+
+body.light-mode {
+  background-color: white;
+  color: black; /* Text color for light mode */
+}
+
+/* Header styling */
+header {
+  color: #646cff; /* Default color for light mode */
+}
+
+/* Dark mode button styling */
+body.dark-mode .dark-mode-toggle {
+  color: #fff; /* Text color for button in dark mode */
+}
+
+/* Button style for active state in dark mode */
+body.dark-mode .btn {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Optional: To give the navbar or other elements a smooth color transition */
+nav,
+ul {
+  transition: color 0.5s ease; /* Smooth color change when switching modes */
+}
+
+.btn:focus{
+  outline: none;
 }

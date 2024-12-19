@@ -32,6 +32,9 @@ app.use(errorMiddleware);
 // lets define admin panel
 app.use("/api/admin",adminRoute);
 
+// lets define services 
+app.use("/api/services",serviceRoute);
+
 // Server Port
 const PORT = process.env.PORT || 5000;
 

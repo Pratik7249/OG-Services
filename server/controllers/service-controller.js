@@ -14,4 +14,19 @@ const services = async (req,res) => {
   }
 };
 
-module.exports = services;
+//-----------------------
+// Single service logic
+//-----------------------
+
+const getServiceById = async(req,res) => {
+  try {
+    const id = req.params.id;
+    const data = await Service.findOne({_id:id}); 
+    return res.status(200).json(data);
+  } catch (error) {
+    next(error);
+  }
+}
+
+
+module.exports = {services,getServiceById};

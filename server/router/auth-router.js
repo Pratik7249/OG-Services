@@ -7,16 +7,10 @@ const authMiddleware = require("../middleware/auth-middleware");
 
 
 
-// router.route("/").get((req, res) => {
-//     res.status(200).send("Welcome to first Project using router.");
-// });
-// or using home controller
+
 router.route("/").get(authcontrollers.home);
 
-// router.route("/register").get((req,res)=>{
-//   res.status(200).send("Welcome to registration page using router.");
-// });
-// or   
+  
 router
   .route("/register")
   .post(validate(signupSchema), authcontrollers.register);

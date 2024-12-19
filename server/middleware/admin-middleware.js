@@ -3,6 +3,9 @@ const User = require("../models/user-model");
 const adminMiddleware = async(req,res,next) => {
   //have to write next in every middleware
   try {
+    if (!req.user) {
+      return res.status(401).json({ message: "Authentication required." });
+    }
     const adminRole = req.user.isAdmin;
     if(!adminRole){
       return res.status(403).json({message:"Acces denied. User is not an admin."})

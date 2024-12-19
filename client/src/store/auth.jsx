@@ -40,7 +40,11 @@ export const AuthProvider = ({ children }) => {
 
       if (response.ok) {
         const data = await response.json();
-        setUser(data);
+         // Merge `data` and `data.userData` if both exist
+          const mergedUser = data.userData ? { ...data, ...data.userData } : data;
+
+          // Set the merged user object
+          setUser(mergedUser);       
       } else {
         toast.error("Failed to fetch user data.");
         LogoutUser();
