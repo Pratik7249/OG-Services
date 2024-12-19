@@ -67,3 +67,20 @@ ul {
 .btn:focus{
   outline: none;
 }
+
+/* Underline for active links */
+.active-nav-link {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Offset the underline slightly for better visibility */
+  font-weight: bold; /* Optional: Make the active link bold */
+  color: #db8181; /* Optional: Change color for active link */
+}
+
+.active-nav-link:hover{
+  color: #db8181;
+}
+
+/* Dark mode active link */
+body.dark-mode .active-nav-link {
+  color: #fff; /* Active link color in dark mode */
+}
