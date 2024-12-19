@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
-import "../styles/AdminUpdate.css";  // Adjust the path if needed
 
 export const AdminUpdate = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +12,6 @@ export const AdminUpdate = () => {
   const { id } = useParams();
   const { authorizationToken } = useAuth();
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();  // Initialize useNavigate hook
 
   // Fetch user data to prefill the form
   const getSingleUserData = async () => {
@@ -54,8 +52,6 @@ export const AdminUpdate = () => {
 
       if (response.ok) {
         toast.success("Updated Successfully");
-        // Redirect to the previous page after successful update
-        navigate(-1);  // -1 goes back to the previous page
       } else {
         toast.error("Failed to update the user.");
       }
