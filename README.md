@@ -1,50 +1,35 @@
-Ultimate Courses or Services Website
+# Ultimate Courses or Services Website
 
 This project is the Ultimate Site to provide courses or services to customers. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), this platform delivers a seamless user experience for learning and accessing services.
 
--Features
+## Features
 
-      --> User Features:
-      
-      Authentication: Secure user login and registration with JWT.
-      
-      Course/Service Access: Browse courses or services.
-      
-      Dark Mode: Toggle between light and dark modes for a personalized UI.
-      
-      Contact Form: Users can send inquiries directly to the admin.
+### User Features:
+- **Authentication**: Secure user login and registration with JWT.
+- **Course/Service Access**: Browse courses or services.
+- **Dark Mode**: Toggle between light and dark modes for a personalized UI.
+- **Contact Form**: Users can send inquiries directly to the admin.
 
-      --> Admin Features:
-      
-      Admin Dashboard: Manage users, services, and contact inquiries.
-      
-      Authorization: Restricted access to admin-only pages using middleware.
-      
-      Toast Notifications: Real-time feedback for actions and errors.
+### Admin Features:
+- **Admin Dashboard**: Manage users, services, and contact inquiries.
+- **Authorization**: Restricted access to admin-only pages using middleware.
+- **Toast Notifications**: Real-time feedback for actions and errors.
 
--Tech Stack
+## Tech Stack
 
-      --> Frontend:
-      
-      React.js: Dynamic and responsive user interfaces.
-      
-      React Router: For navigation and routing.
-      
-      Toastify: User notifications.
-      
-      CSS: Custom styling for all components.
-      
-      --> Backend:
-      
-      Node.js: Server-side runtime environment.
-      
-      Express.js: REST API development.
-      
-      MongoDB: Database for storing user and service data.
-      
-      Mongoose: Simplified MongoDB interactions.
+### Frontend:
+- **React.js**: Dynamic and responsive user interfaces.
+- **React Router**: For navigation and routing.
+- **Toastify**: User notifications.
+- **CSS**: Custom styling for all components.
 
--Project Structure
+### Backend:
+- **Node.js**: Server-side runtime environment.
+- **Express.js**: REST API development.
+- **MongoDB**: Database for storing user and service data.
+- **Mongoose**: Simplified MongoDB interactions.
+
+## Project Structure
 
 project-directory
 ├── server
@@ -60,49 +45,54 @@ project-directory
 │   └── App.js      # Main React app entry point
 └── README.md       # Project documentation
 
--Installation
 
-      --> Prerequisites:
-      
-      Node.js (v16+ recommended)
-      
-      MongoDB (Local or cloud instance)
-      
-      Git
+## Installation
 
-      --> Steps:
-      
-      1) Clone the repository:
-      
-      git clone https://github.com/Pratik7249/OG-Services.git
-      
-      2) Install dependencies for both frontend and backend:
-      
-      # Install backend dependencies
-      cd server
-      npm install
-      
-      # Install frontend dependencies
-      cd ../client
-      npm install
+### Prerequisites:
+- Node.js (v16+ recommended)
+- MongoDB (Local or cloud instance)
+- Git
 
-      3) Configure environment variables:
-      
-      Create a .env file in the backend directory with the following:
-      
-      PORT=5000
-      MONGO_URI=<your-mongo-uri>
-      JWT_SECRET=<your-secret-key>
+### Steps:
 
--Start the project:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Pratik7249/OG-Services.git
+    ```
 
-# Start the backend server
-cd backend
-npm start
+2. **Install dependencies for both frontend and backend**:
+    - Install backend dependencies:
+        ```bash
+        cd server
+        npm install
+        ```
+    - Install frontend dependencies:
+        ```bash
+        cd ../client
+        npm install
+        ```
 
-# Start the frontend development server
-cd ../frontend
-npm run dev
+3. **Configure environment variables**:
+    Create a `.env` file in the backend directory with the following:
+    ```env
+    PORT=5000
+    MONGO_URI=<your-mongo-uri>
+    JWT_SECRET=<your-secret-key>
+    ```
+
+## Start the project:
+
+- **Start the backend server**:
+    ```bash
+    cd backend
+    npm start
+    ```
+
+- **Start the frontend development server**:
+    ```bash
+    cd ../frontend
+    npm run dev
+    ```
 
 ---
 
@@ -125,15 +115,15 @@ npm run dev
 We welcome contributions! To contribute:
 1. Fork the repository.
 2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature
-
-Commit your changes:
-
-git commit -m "Add your message here"
-
-Push to your branch:
-
-git push origin feature/your-feature
-
-Open a pull request on GitHub.
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m "Add your message here"
+    ```
+4. Push to your branch:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. Open a pull request on GitHub.
