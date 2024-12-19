@@ -43,7 +43,8 @@ This project is the Ultimate Site to provide courses or services to customers. B
 │   ├── pages       # Individual views (Home, Login, Admin, etc.)
 │   ├── store       # Context and state management
 │   └── App.js      # Main React app entry point
-└── README.md       # Project documentation```
+└── README.md       # Project documentation
+```
 
 
 ## Installation
